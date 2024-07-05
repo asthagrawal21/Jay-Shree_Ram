@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.text{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.text h1{
+    font-family: "Amita", sans-serif;
+    color: rgba(255, 0, 0, 0.1);
+    font-size: 120px;
+    font-weight: 700;
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+    background-clip: text;
+    animation: myanimation 15s linear infinite;
+}
+@keyframes myanimation{
+    0%{
+        background-position: left 0px top 30%;
+    }
+    50%{
+        background-position: left 500px top 50%;
+    }
+    100%{
+        background-position: left 0px top 30%;
+    }
+}
